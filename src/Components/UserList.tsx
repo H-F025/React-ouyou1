@@ -30,7 +30,7 @@ export const UserList = () => {
     fetchUsers();
   }, []);
 
-const filteredUsers = users.filter((user) =>
+  const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().startsWith(searchTerm.toLowerCase())
   );
 
